@@ -11,6 +11,8 @@ module.exports= {
 
         const product = products.find(product => product.id === +id)
 
-        return res.render('detalleMenu')
+        return res.render('detalleMenu', {
+            product
+        })
     }
 }
